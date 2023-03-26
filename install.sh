@@ -11,8 +11,7 @@ git clone https://github.com/F5OEO/csdr
 cd csdr || exit
 make && sudo make install
 cd ../ || exit
-
-cd src || exit
+ cd src || exit   
 git clone https://github.com/F5OEO/librpitx
 cd librpitx/src || exit
 make && sudo make install
@@ -24,8 +23,8 @@ cd ft8_lib
 make && sudo make install
 cd ../
 make
-cd ../
-
+cd rpitx
+./install.sh
 make
 sudo make install
 cd .. || exit
